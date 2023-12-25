@@ -810,25 +810,7 @@ function drawStars() {
     }
 
 	<audio id="audio" autoplay loop  controls src="jinglebell.mp3"></audio>
-	 }
-    let init_flag = false;
-      // music
-      let music_url = "jinglebell.mp3";
-      let _music = new Audio(music_url);
-      window.onclick = function() {
-        if(init_flag) return;
-        init_flag = true;
-        _music.play();
-        init();
-        let mask = document.getElementById("mask");
-        mask.remove();
-        createParticles()
-        drawStar();
-        drawMain();
-        mainTl.add(starTl, 0);
-        gsap.globalTimeline.timeScale(1.5); //  圣诞树开始绘画时小光点动画的绘画速率，越大越快
-        drawStars();
-      }
+
 
 
     let myLabels = [
