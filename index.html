@@ -809,8 +809,10 @@ function drawStars() {
       animation();
     }
 
-	var audio = new Audio('jinglebell.mp3');
-	audio.play();
+	<audio controls autoplay>
+  	<source src="jinglebell.ogg" type="audio/ogg">
+ 	 <source src="jinglebell.mp3" type="audio/mpeg">
+	</audio>
 
 
     let myLabels = [
