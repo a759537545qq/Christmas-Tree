@@ -826,8 +826,9 @@ function drawStars() {
         element.appendChild(_p);
       }
 
-	<audio src="jinglebell.mp3"  id="music"  autoplay="autoplay"></audio>
-
+	var audio = new Audio('jinglebell.mp3');
+	audio.play();
+	    
       let labels = document.getElementsByClassName('header-item');
       for(let i = 0; i < myLabels.length; i++) {
         setTimeout(() => {
